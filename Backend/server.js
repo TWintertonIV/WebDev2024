@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 const dotenv = require('dotenv');
 dotenv.config();
+const Recipe = require('./models/Recipe'); // import recipe schema
 
 
 const app = express();
