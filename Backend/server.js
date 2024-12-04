@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const recipeController = require('./controllers/recipeController');
+const recipeController = require('./controllers/recipeController'); // import recipe controller
 
 //THIS REQUIRES A .env FILE WITH MONGODB_URI and PORT
 
@@ -23,9 +23,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 app.get('/', (req, res) => {
   res.send('Hello from Express and Mongoose!');
 });
-app.get('/', recipeController.homepage);
+
+// more routes
+app.get('/homepage', recipeController.homepage);
 app.get('/recipes', recipeController.getAllRecipes);
-app.get('/recipes/:id', recipeController.getRecipeByID
+app.get('/recipes/:id', recipeController.getRecipeByID);
 
 // Start the server
 app.listen(PORT, () => {
