@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const recipeController = require('./controllers/recipeController'); // import recipe controller
-const path = require('path'); // ADDED!!!!
+const recipeController = require('./controllers/recipeController'); // Import recipe controller
+const path = require('path'); 
 
 //THIS REQUIRES A .env FILE WITH MONGODB_URI and PORT
 
@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 .then(() => console.log('Connected to MongoDB'))
 .catch((error) => console.error('Error connecting to MongoDB', error));
 
-app.use(express.static(path.join(__dirname, 'public'))); // ADDED!!!
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 // Define a simple route
 app.get('/', (req, res) => {
