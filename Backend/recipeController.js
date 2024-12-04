@@ -1,6 +1,6 @@
 const Recipe = require('../models/Recipe');
 
-// show all recipes from our database
+// show all recipes, pulls data from our database
 exports.getAllRecipes = async (req, res) => {
     try {
         const recipes = await Recipe.find();
@@ -10,7 +10,7 @@ exports.getAllRecipes = async (req, res) => {
     }
 };
 
-// retrieve recipe by unique ID
+// retrieve by ID
 exports.getRecipeByID = async (req, res) => {
     try {
         const recipe = await Recipe.findById(req.params.id);
@@ -19,13 +19,31 @@ exports.getRecipeByID = async (req, res) => {
             return res.status(404).json({message: "Recipe cannot be found"});   
         }
         res.json(recipe); 
-    }
-    catch (error) {
+    } catch (error) {
         res.status(500).json({message: "Error fetching recipe", error});
     }
 };
 
-// render homepage
+// updates database with new recipe
+exports.addRecipe = async (req, res) => {
+    try {
+        const newRecipe = new Recipe({
+            title: req.body.title,
+            cuisineType: req.body.cuisineType,
+            ingredients: req.body.ingredients,
+            totalPrepTime: req.body.totalPrepTime,
+            totalCookTime: req.body.totalCookTime,
+            instructions: req.body.instructions,
+        });
+        await newRecipe.save();
+
+        res.status(201).json({message: "Recipe added", recipe: newRecipe});
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "Error adding recipe", error});
+    }
+};
+
 exports.homepage = async(req, res) => {
     res.render('index', {title: 'Recipe Hub - Home'});
 }
