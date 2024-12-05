@@ -1,4 +1,3 @@
-import RecipesSection from "/RecipesSection.jsx";
 
 function HomePage(){
 
