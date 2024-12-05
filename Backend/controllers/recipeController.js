@@ -45,5 +45,5 @@ exports.addRecipe = async (req, res) => {
 };
 
 exports.homepage = async(req, res) => {
-    res.render('index', {title: 'Recipe Hub - Home'});
+    res.render('../../Frontend/RecipeHub/index.html', {title: 'Recipe Hub - Home'});
 }
