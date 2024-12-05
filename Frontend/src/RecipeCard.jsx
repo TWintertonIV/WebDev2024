@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FC, useState, useEffect } from 'react';
 
-function RecipeCard() {
+const RecipeCard = ()=> {
     
     const [recipes, setRecipes] = useState([]);
 
@@ -12,17 +12,20 @@ function RecipeCard() {
     }, []);
 
     return (
+        <>
         <div>
+            <p>hi</p>
             {recipes.map((recipe) => (
                 <div>
-                    <Link to={`/recipes/${recipe._id}`}>
-                    <h2>
-                    {recipe.title}
-                    </h2>
-                    </Link>
+                <Link to={`/recipes/${recipe._id}`}>
+                <h2>
+                {recipe.title}
+                </h2>
+                </Link>
                 </div>   
-            ))}
+                ))}
         </div> 
+        </>
     );
 }
 
