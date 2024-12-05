@@ -46,5 +46,5 @@ exports.addRecipe = async (req, res) => {
 };
 
 exports.homepage = async(req, res) => {
-    res.sendFile(path.join(__dirname, '../../Frontend/index.html'), {title: 'Recipe Hub - Home'});
+    res.sendFile(path.join(__dirname, '../dist/index.html'), {title: 'Recipe Hub - Home'});
 }

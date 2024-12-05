@@ -21,8 +21,8 @@ mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log('Connected to MongoDB'))
 .catch((error) => console.error('Error connecting to MongoDB', error));
 
-app.use(express.static(path.join(__dirname, 'public'))); 
-
+// app.use(express.static(path.join(__dirname, 'public'))); 
+app.use(express.static(path.join(__dirname, '../assets')));
 // Define a simple route
 app.get('/', (req, res) => {
   res.send('Hello from Express and Mongoose!');
