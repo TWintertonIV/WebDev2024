@@ -4,8 +4,7 @@ import AddRecipe from './AddRecipe.jsx';
 
 
 
-function App() {
-
+function App(){
   return (
     <AddRecipe />
   );

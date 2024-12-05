@@ -28,6 +28,9 @@ app.get('/', (req, res) => {
   res.send('Hello from Express and Mongoose!');
 });
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 // More routes  
 app.get('/homepage', recipeController.homepage);
 app.get('/recipes', recipeController.getAllRecipes);

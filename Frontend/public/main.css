@@ -210,3 +210,13 @@ header .navbar{
     border-radius: var(--border-radius-m);
     border-color: var(--eggplant-purple);
 }
+
+.footer-section{
+    background-color: var(--cloud-white);
+    padding: 0 0 0;
+}
+
+.footer-section .section-content .copyright-text{
+    background-color: var(--cloud-white);
+    text-align: left;
+} 
