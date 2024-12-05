@@ -10,17 +10,13 @@ function RecipeCard() {
         <div>
             <div>
                 {recipes.map((recipe) => (
-                    <div
-                        key={recipe.canonical_url}
-                    >
                     <div>
                         <Link to={`/recipes/${recipe.id}`}>
                         <h2>
                         {recipe.title}
                         </h2>
                         </Link>
-                    </div>
-                    </div>    
+                    </div>   
                 ))}
             </div>
         </div>
