@@ -1,17 +1,17 @@
 function NewRecipe() {
  
     return (
-      <div class="box">
+      <div className="box">
         <form method="post">
         <div id="x">
-            <div class="recipeBox">
+            <div className="recipeBox">
               <div>
-                <button id="newRecipeClose" class="closeBtn"></button>
+                <button id="newRecipeClose" className="closeBtn"></button>
               </div>
               <div>
                 <input type="text" id="recipeName"></input>
               </div>
-              <div class="recipeInfo">
+              <div className="recipeInfo">
                 <label for="cuisineType">Cuisine type:</label>
                 <input type="text" id="cuisineType"></input>
                 <label for="prepTime">Prep time (mins):</label>
@@ -21,11 +21,11 @@ function NewRecipe() {
                 <label for="dateAdded">Date added:</label>
                 <input type="date" id="dateAdded"></input>
               </div>
-              <div class="y">
+              <div className="y">
                 <label for="ingredients">Ingredients:</label>
                 <textarea id="ingredients"></textarea>
               </div>
-              <div class="y">
+              <div className="y">
                 <label for="instructions">Instructions:</label>
                 <textarea id="instructions"></textarea>
               </div>
