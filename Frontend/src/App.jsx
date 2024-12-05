@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import './App.css';
-import AddRecipe from './AddRecipe.jsx';
-
+import HomePage from './HomePage.jsx';
 
 
 function App(){
   return (
-    <AddRecipe />
+    <div>
+      <Header />
+      <main>
+        <HomePage />
+      </main>
+    </div>
   );
 }
 
