@@ -1,3 +1,4 @@
+import RecipeCard from "./RecipeCard";
 
 function HomePage(){
 
@@ -22,6 +23,7 @@ function HomePage(){
             <div class="recipes-section">
                 <div class="recipes-details">
                     <h2 class="section-title">My Recipes</h2>
+                    <RecipeCard />
                 </div>
             </div>
 
