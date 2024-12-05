@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send('Hello from Express and Mongoose!');
 });
 
-// More routes
+// More routes  
 app.get('/homepage', recipeController.homepage);
 app.get('/recipes', recipeController.getAllRecipes);
 app.get('/recipes/:id', recipeController.getRecipeByID);
