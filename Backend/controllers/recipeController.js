@@ -1,3 +1,4 @@
+const path = require('path');
 const Recipe = require('../models/Recipe');
 
 // show all recipes, pulls data from our database
@@ -45,5 +46,5 @@ exports.addRecipe = async (req, res) => {
 };
 
 exports.homepage = async(req, res) => {
-    res.render('../../Frontend/RecipeHub/index.html', {title: 'Recipe Hub - Home'});
+    res.sendFile(path.join(__dirname, '../../Frontend/RecipeHub/index.html'), {title: 'Recipe Hub - Home'});
 }
