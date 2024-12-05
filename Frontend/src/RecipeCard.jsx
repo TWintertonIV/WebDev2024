@@ -1,6 +1,5 @@
 import Link from 'react-router-dom'
 import { FC, useState, useEffect } from 'react'
-import { useRecipes } from '@/hook/useRecipes'
 
 function RecipeCard() {
     
