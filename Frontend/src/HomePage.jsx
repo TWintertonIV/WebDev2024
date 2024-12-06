@@ -16,12 +16,12 @@ function HomePage(){
         <header>
             <nav className="navbar section-content">
             {/*header*/}
-            <a href="index.html" className="nav-logo">
+            <Link to="/" className="nav-logo">
                 <img src={logo} alt="logo" className="header-logo" />
-            </a>
+            </Link>
             <ul className="nav-menu">
                 <li className="nav-items">
-                <Link to={"/HomePage"} className="nav-link">
+                <Link to={"/"} className="nav-link">
                     Home
                 </Link>
                 </li>

@@ -19,7 +19,7 @@ function RecipeDetails() {
     }, []);
 
 
-    const recipe = recipes.find(r => r._id.toString() === _id);  // Compare ObjectId as string
+    const recipe = recipes.find(r => r._id.toString() === _id); 
 
     if (!recipe) {
         return <p>Recipe not found.</p>;
