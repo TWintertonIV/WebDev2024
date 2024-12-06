@@ -2,6 +2,7 @@
 import './HomePage.css';
 import hero from '../public/images/heroImg3.png';
 import logo from '../public/images/whiteLogo.png';
+import egg from '../public/images/egg.png';
 import { Link } from 'react-router-dom';
 function HomePage(){
 
@@ -11,14 +12,14 @@ function HomePage(){
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Recipe Hub</title>
         {/*favicon: icon infront of tab name*/}
-        <link rel="shortcut icon" href=".favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href={egg} type="image/x-icon" />
         {/* Header / Navbar */}
         <header>
             <nav className="navbar section-content">
             {/*header*/}
-            <a href="index.html" className="nav-logo">
+            <Link to="/" className="nav-logo">
                 <img src={logo} alt="logo" className="header-logo" />
-            </a>
+            </Link>
             <ul className="nav-menu">
                 <li className="nav-items">
                 <a href="#" className="nav-link">

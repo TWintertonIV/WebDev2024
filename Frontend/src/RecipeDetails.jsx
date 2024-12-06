@@ -5,7 +5,6 @@ import './RecipeDetails.css';
 function RecipeDetails() {
     const {_id} = useParams();
     const [recipes, setRecipes] = useState([]);
-    const [loading, setLoading] = useState(true);
 
 
     useEffect(() => {
@@ -13,7 +12,6 @@ function RecipeDetails() {
         .then(response => response.json())
         .then(data => {
             setRecipes(data);
-            setLoading(false);
         })
 
     }, []);
