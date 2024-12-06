@@ -24,14 +24,14 @@ const Recipes = ()=> {
             </Link>
             <ul className="nav-menu">
                 <li className="nav-items">
-                <a href="#" className="nav-link">
-                    Home
-                </a>
+                <Link to={"/"} className="nav-link">
+                        Home
+                </Link>
                 </li>
                 <li className="nav-items">
-                <a href="#" className="nav-link">
+                <Link to={"/Recipes"} className="nav-link">
                     Recipes
-                </a>
+                    </Link>
                 </li>
             </ul>
             </nav>
