@@ -34,7 +34,7 @@ function RecipeDetails() {
             <p>{recipe.totalCookTime} minutes</p>
             <p>{recipe.instructions}</p>
             <p>{new Date(recipe.uploadDate).toLocaleDateString()}</p>
-            <p><Link to="/">All Recipes</Link></p>
+            <p><Link to="/Recipes">All Recipes</Link></p>
         </>
     );
 }
