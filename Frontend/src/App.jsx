@@ -9,12 +9,13 @@ import Recipes from './Recipes.jsx';
 function App(){
   return (
     <>
-    <div>
+    {/* <div>
       <main>
         <HomePage />
       </main>
-    </div>
+    </div> */}
     <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/recipes/:_id" element={<RecipeDetails />} />
         <Route path="/recipes" element={<Recipes />} />
     </Routes>

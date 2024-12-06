@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const recipeController = require('./controllers/recipeController'); // Import recipe controller
 const path = require('path'); 
+const cors = require('cors')
 
 //THIS REQUIRES A .env FILE WITH MONGODB_URI and PORT
 
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware for POST requests
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true })); 
-
+app.use(cors())
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)

@@ -13,19 +13,17 @@ const Recipes = ()=> {
 
     return (
         <>
-        <div>
-            <p>hi</p>
-            {recipes.map((recipe) => (
-                <div>
+    <div>
+        <p>hi</p>
+        {recipes.map((recipe) => (
+            <div key={recipe._id}>
                 <Link to={`/recipes/${recipe._id}`}>
-                <h2>
-                {recipe.title}
-                </h2>
+                    <h2>{recipe.title}</h2>
                 </Link>
-                </div>   
-                ))}
-        </div> 
-        </>
+            </div>
+        ))}
+    </div>
+</>
     );
 }
 
