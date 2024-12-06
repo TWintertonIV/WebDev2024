@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FC, useState, useEffect } from 'react';
 
-const RecipeCard = ()=> {
+const Recipes = ()=> {
     
     const [recipes, setRecipes] = useState([]);
 
@@ -29,4 +29,4 @@ const RecipeCard = ()=> {
     );
 }
 
-export default RecipeCard;
+export default Recipes;
