@@ -16,24 +16,19 @@ function HomePage(){
         <header>
             <nav className="navbar section-content">
             {/*header*/}
-            <a href="index.html" className="nav-logo">
+            <Link to="/" className="nav-logo">
                 <img src={logo} alt="logo" className="header-logo" />
-            </a>
+            </Link>
             <ul className="nav-menu">
                 <li className="nav-items">
                 <a href="#" className="nav-link">
                     Home
                 </a>
                 </li>
-                <li className="nav-items">
-                <a href="#" className="nav-link">
+                <li className="buttons">
+                <Link to={"/Recipes"} className="nav-link">
                     Recipes
-                </a>
-                </li>
-                <li className="nav-items">
-                <a href="#" className="nav-link">
-                    Contact
-                </a>
+                </Link>
                 </li>
             </ul>
             </nav>

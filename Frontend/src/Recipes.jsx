@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { FC, useState, useEffect } from 'react';
 import './recipeCollection.css';
+import './HomePage.css';
+import logo from '../public/images/whiteLogo.png';
 
 const Recipes = ()=> {
     
@@ -14,6 +16,26 @@ const Recipes = ()=> {
 
     return (
         <>
+        <header>
+            <nav className="navbar section-content">
+            {/*header*/}
+            <Link to="/" className="nav-logo">
+                <img src={logo} alt="logo" className="header-logo" />
+            </Link>
+            <ul className="nav-menu">
+                <li className="nav-items">
+                <a href="#" className="nav-link">
+                    Home
+                </a>
+                </li>
+                <li className="nav-items">
+                <a href="#" className="nav-link">
+                    Recipes
+                </a>
+                </li>
+            </ul>
+            </nav>
+        </header>
     <div className = "container">
         <h1 className = "title">Your Collection</h1>
         <div className = "recipeList">
