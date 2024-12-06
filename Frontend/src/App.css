@@ -5,31 +5,3 @@
   text-align: center;
 }
 
-#x {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.recipeBox {
-  height: 90%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-}
-
-.recipeInfo {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.closeBtn {
-  height: 20px;
-  width: 20px;
-}
-
-.box {
-  position: absolute;
-  z-index: 999;
-}
