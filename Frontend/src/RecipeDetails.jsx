@@ -36,7 +36,7 @@ function RecipeDetails() {
                 </Link>
                 <ul className="nav-menu">
                     <li className="nav-items">
-                    <Link to={"/Recipes"} className="nav-link">
+                    <Link to={"/"} className="nav-link">
                         Home
                     </Link>
                     </li>
