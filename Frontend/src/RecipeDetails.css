@@ -1,3 +1,44 @@
+/*navbar styling*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--eggplant-purple);
+}
+
+/* spacing between and around words*/
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    
+}
+
+/* The Buttons */
+.navbar .nav-menu .nav-link{
+    padding: 10px 15px;
+    color: var(--cloud-white);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+    min-width: 100px;
+}
+
+
+/* transition changes when hovered over*/
+.navbar .nav-menu .nav-link:hover{
+    color: var(--eggplant-purple);
+    background-color: var(--bisque-color);
+}
+
+
+
 .container{
     padding: 20px;
     margin: 0 auto;
