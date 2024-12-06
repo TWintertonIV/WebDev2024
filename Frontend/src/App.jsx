@@ -15,7 +15,7 @@ function App(){
       </main>
     </div> */}
     <Routes>
-        <Route path="/homepage" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/recipes/:_id" element={<RecipeDetails />} />
         <Route path="/recipes" element={<Recipes />} />
     </Routes>
