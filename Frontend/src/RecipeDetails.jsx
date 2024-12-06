@@ -28,13 +28,13 @@ function RecipeDetails() {
     return (
         <>
             <h2>{recipe.title}</h2>  
-            <p>{recipe.cuisineType.join(', ')}</p>
-            <p>{recipe.ingredients.join(', ')}</p>
-            <p>{recipe.totalPrepTime} minutes</p>
-            <p>{recipe.totalCookTime} minutes</p>
-            <p>{recipe.instructions}</p>
-            <p>{new Date(recipe.uploadDate).toLocaleDateString()}</p>
-            <p><Link to="/">All Recipes</Link></p>
+            <p>Cuisine type: {recipe.cuisineType.join(', ')}</p>
+            <p>Ingredients: {recipe.ingredients.join(', ')}</p>
+            <p>Total prep time: {recipe.totalPrepTime} minutes</p>
+            <p>Total cook time: {recipe.totalCookTime} minutes</p>
+            <p>Instructions: {recipe.instructions}</p>
+            <p>Upload date: {new Date(recipe.uploadDate).toLocaleDateString()}</p>
+            <p><Link to="/Recipes">All Recipes</Link></p>
         </>
     );
 }
