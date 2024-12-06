@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FC, useState, useEffect } from 'react';
+import './recipeCollection.css';
 
 const Recipes = ()=> {
     
@@ -13,15 +14,18 @@ const Recipes = ()=> {
 
     return (
         <>
-    <div>
-        <p>hi</p>
+    <div className = "container">
+        <h1 className = "title">Your Collection</h1>
+        <div className = "recipeList">
+ 
         {recipes.map((recipe) => (
-            <div key={recipe._id}>
-                <Link to={`/recipes/${recipe._id}`}>
+            <div className = "recipeCard" key= {recipe._id}>
+                <Link className = "recipeLink" to = {`/recipes/${recipe._id}`}>
                     <h2>{recipe.title}</h2>
                 </Link>
             </div>
         ))}
+        </div>
     </div>
 </>
     );

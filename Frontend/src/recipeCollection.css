@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: var(--eggplant-purple);
+  }
+  
+  .title {
+    font-size: var(--font-size-xl);
+    font-family: "Miniver", sans-serif;
+    margin-bottom: 20px;
+    color: var(--bisque-color);
+  }
+  
+  .recipeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .recipeCard {
+    background-color: var(--bisque-color);
+    color: var(--eggplant-purple);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Transitions to this when hovered */
+  .recipeCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border-color: var(--cloud-white);
+    color: var(--cloud-white); 
+  }
+  
+  .recipeLink {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+  }
+
+    /* Transitions to this when hovered */
+  .recipeLink:hover {
+    color: var(--cloud-white);
+  }
+ 
+  
