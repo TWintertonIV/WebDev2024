@@ -17,7 +17,7 @@ function HomePage(){
         <header>
             <nav className="navbar section-content">
             {/*header*/}
-            <Link to="/" className="nav-logo">
+            <Link to={"/"} className="nav-logo">
                 <img src={logo} alt="logo" className="header-logo" />
             </Link>
             <ul className="nav-menu">
