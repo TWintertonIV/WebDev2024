@@ -21,7 +21,7 @@ function HomePage(){
             </a>
             <ul className="nav-menu">
                 <li className="nav-items">
-                <Link to={"/HomePage"} className="nav-link">
+                <Link to={"/"} className="nav-link">
                     Home
                 </Link>
                 </li>
