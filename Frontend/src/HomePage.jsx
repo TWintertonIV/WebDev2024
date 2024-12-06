@@ -11,7 +11,7 @@ function HomePage(){
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Recipe Hub</title>
         {/*favicon: icon infront of tab name*/}
-        <link rel="shortcut icon" href=".favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href={logo} type="image/x-icon" />
         {/* Header / Navbar */}
         <header>
             <nav className="navbar section-content">
