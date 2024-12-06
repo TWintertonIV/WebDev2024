@@ -25,15 +25,10 @@ function HomePage(){
                     Home
                 </a>
                 </li>
-                <li className="nav-items">
-                <a href="#" className="nav-link">
+                <li className="buttons">
+                <Link to={"/Recipes"} className="nav-link">
                     Recipes
-                </a>
-                </li>
-                <li className="nav-items">
-                <a href="#" className="nav-link">
-                    Contact
-                </a>
+                </Link>
                 </li>
             </ul>
             </nav>
