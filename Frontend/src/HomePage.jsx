@@ -16,7 +16,7 @@ function HomePage(){
             <nav className="navbar section-content">
             {/*header*/}
             <a href="index.html" className="nav-logo">
-                <img src="/whiteLogo.png" alt="logo" className="header-logo" />
+                <img src="src/public/whiteLogo.png" alt="logo" className="header-logo" />
             </a>
             <ul className="nav-menu">
                 <li className="nav-items">
@@ -29,13 +29,7 @@ function HomePage(){
                     Recipes
                 </a>
                 </li>
-                <li className="nav-items">
-                </li>
-                <li className="nav-items">
-                <a href="#" className="nav-link">
-                    Contact
-                </a>
-                </li>
+
             </ul>
             </nav>
         </header>
@@ -58,7 +52,7 @@ function HomePage(){
                 </div>
                 </div>
                 <div className="hero-image-wrapper">
-                <img src="assets/heroImg3.png" alt="Hero" className="hero-image" />
+                <img src="src/public/heroImg3.png" alt="Hero" className="hero-image" />
                 </div>
             </div>
             </section>
