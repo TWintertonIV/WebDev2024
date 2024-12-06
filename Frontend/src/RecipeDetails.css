@@ -1,0 +1,68 @@
+.container{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--eggplant-purple);
+}
+
+.container h2{
+    font-family: "Miniver", sans-serif;
+    font-size: var(--font-size-xl);
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+.recipe-details{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 20px;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: var(--border-radius-m);
+}
+
+.food-details{
+    margin: auto;
+}
+
+.food-description{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.food-description h3{
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+    margin:auto;
+}
+
+.food-description p{
+    font-size: var(--font-size-m);
+}
+
+.upload-date{
+    font-size: var(--font-size-s);
+}
+
+.recipes-button{
+    margin-top: 30px;
+}
+
+.recipes-button a{
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    color: var(--eggplant-purple);
+    padding: 10px 20px;
+    background-color: var(--light-peach);
+    border-radius: var(--border-radius-s);
+    transition: 0.3s ease;
+}
+
+.recipes-button a:hover{
+    background-color: var(--eggplant-purple);
+    color: var(--cloud-white);
+}
